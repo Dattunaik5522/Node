@@ -12,6 +12,11 @@ console.log(addLogic.add(300, 297));
 console.log(addLogic.add(003, 297));
 console.log(addLogic.subtract(003, 297));
 console.log(addLogic.subtract(300, 297));
+
+const { add, subtract } = addLogic;
+console.log(add(1, 2));
+console.log(subtract(1, 2));
+
 /**
  * Each loaded moddule in Node.js is wrapped with an IIFE that provides private scoping of code
  * IIFE allows you to  repeat variable function names without any conflicts.
